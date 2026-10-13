@@ -1,0 +1,32 @@
+# ===== AWS credentials (ห้าม commit) =====
+.aws/
+.env
+*.env
+!.env.example
+credentials
+*.pem
+*.key
+
+# ===== AWS CLI / SDK config =====
+.aws-sam/
+cdk.out/
+*.tfstate
+*.tfstate.backup
+
+# ===== DynamoDB Local =====
+dynamodb-local/
+*.db-journal
+
+# ===== secrets / data export =====
+backup/
+export/
+*.csv
+!sample/*.csv
+
+# ===== macOS =====
+.DS_Store
+
+# ===== editors =====
+.vscode/
+.idea/
+*.swp
