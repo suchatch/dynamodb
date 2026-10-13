@@ -1,5 +1,6 @@
 # ===== AWS credentials (ห้าม commit) =====
 .aws/
+.aws-local-creds
 .env
 *.env
 !.env.example

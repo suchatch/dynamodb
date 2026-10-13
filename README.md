@@ -19,6 +19,9 @@
 | 5 | **`dynamodb-best-practices.md`** | แนวปฏิบัติที่ดี (key design, single-table, cost, security) |
 | 6 | **`migration-from-sql.md`** | ย้ายจาก SQL/MongoDB (วิธีคิด + ตัวอย่างแปลงครบชุด) |
 | 7 | **`dynamodb-vs-opensearch.md`** | เทียบกับ OpenSearch (เลือกอะไร เมื่อไหร่ + ใช้คู่กัน) |
+| 8 | **`dynamodb-local-setup.md`** | 🔬 ทดลองของจริง — DynamoDB Local + 13 หัวข้อ
+
+> **มี script รันได้:** `scripts/setup-dynamodb-local.sh` · `scripts/demo-query-vs-scan.sh` · `scripts/cleanup-dynamodb-local.sh`
 
 ---
 
@@ -160,8 +163,32 @@ dynamodb-query-reference.md   API + prod safety
 dynamodb-best-practices.md    แนวปฏิบัติที่ดี (11 หมวด + checklist)
 migration-from-sql.md         ย้ายจาก SQL/MongoDB (9 ส่วน + ตัวอย่าง)
 dynamodb-vs-opensearch.md     เทียบ OpenSearch (9 ส่วน + ใช้คู่กัน)
+dynamodb-local-setup.md       🔬 ทดลองของจริง (DynamoDB Local)
+scripts/
+  setup-dynamodb-local.sh       ตั้ง Local + table + data + GSI
+  demo-query-vs-scan.sh         สาธิต Query vs Scan (ตัวเลขจริง)
+  cleanup-dynamodb-local.sh     ลบทั้งหมด
 README.md                     ไฟล์นี้
 ```
+
+---
+
+## 🔬 ลองของจริง (DynamoDB Local)
+
+```bash
+./scripts/setup-dynamodb-local.sh    # ตั้ง Local + ข้อมูลตัวอย่าง
+./scripts/demo-query-vs-scan.sh      # พิสูจน์ Query vs Scan (ตัวเลขจริง)
+./scripts/cleanup-dynamodb-local.sh  # ลบทั้งหมด
+```
+
+ผลที่ได้ (ตัวอย่าง):
+```
+Query + Filter  → Scanned 4  ← ★ Filter ไม่ลดการอ่าน!
+Scan  + Filter  → Scanned 6  ← ❌ อ่านทั้ง table
+GSI Query       → Scanned 2  ← ★ ดีสุด
+```
+
+รายละเอียด: `dynamodb-local-setup.md`
 
 ---
 
