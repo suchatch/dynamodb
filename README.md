@@ -19,7 +19,8 @@
 | 5 | **`dynamodb-best-practices.md`** | แนวปฏิบัติที่ดี (key design, single-table, cost, security) |
 | 6 | **`migration-from-sql.md`** | ย้ายจาก SQL/MongoDB (วิธีคิด + ตัวอย่างแปลงครบชุด) |
 | 7 | **`dynamodb-vs-opensearch.md`** | เทียบกับ OpenSearch (เลือกอะไร เมื่อไหร่ + ใช้คู่กัน) |
-| 8 | **`dynamodb-local-setup.md`** | 🔬 ทดลองของจริง — DynamoDB Local + 13 หัวข้อ
+| 8 | **`dynamodb-local-setup.md`** | 🔬 ทดลองของจริง — DynamoDB Local + 13 หัวข้อ |
+| 9 | **`dynamodb-examples.md`** | โค้ดจริง (boto3 / Node.js) — CRUD, query, pagination, transaction |
 
 > **มี script รันได้:** `scripts/setup-dynamodb-local.sh` · `scripts/demo-query-vs-scan.sh` · `scripts/cleanup-dynamodb-local.sh`
 
@@ -164,6 +165,7 @@ dynamodb-best-practices.md    แนวปฏิบัติที่ดี (11 
 migration-from-sql.md         ย้ายจาก SQL/MongoDB (9 ส่วน + ตัวอย่าง)
 dynamodb-vs-opensearch.md     เทียบ OpenSearch (9 ส่วน + ใช้คู่กัน)
 dynamodb-local-setup.md       🔬 ทดลองของจริง (DynamoDB Local)
+dynamodb-examples.md          โค้ดจริง boto3 / Node.js
 scripts/
   setup-dynamodb-local.sh       ตั้ง Local + table + data + GSI
   demo-query-vs-scan.sh         สาธิต Query vs Scan (ตัวเลขจริง)
