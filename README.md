@@ -18,6 +18,7 @@
 | 4 | **`dynamodb-query-reference.md`** | API + 🔴 สิ่งที่ทำให้แพง/ช้า |
 | 5 | **`dynamodb-best-practices.md`** | แนวปฏิบัติที่ดี (key design, single-table, cost, security) |
 | 6 | **`migration-from-sql.md`** | ย้ายจาก SQL/MongoDB (วิธีคิด + ตัวอย่างแปลงครบชุด) |
+| 7 | **`dynamodb-vs-opensearch.md`** | เทียบกับ OpenSearch (เลือกอะไร เมื่อไหร่ + ใช้คู่กัน) |
 
 ---
 
@@ -158,6 +159,7 @@ dynamodb-data-types.md        types ทั้งหมด
 dynamodb-query-reference.md   API + prod safety
 dynamodb-best-practices.md    แนวปฏิบัติที่ดี (11 หมวด + checklist)
 migration-from-sql.md         ย้ายจาก SQL/MongoDB (9 ส่วน + ตัวอย่าง)
+dynamodb-vs-opensearch.md     เทียบ OpenSearch (9 ส่วน + ใช้คู่กัน)
 README.md                     ไฟล์นี้
 ```
 
