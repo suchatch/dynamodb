@@ -16,6 +16,8 @@
 | 2 | **`dynamodb-key-design.md`** | ★ หัวใจ — Partition Key, Sort Key, GSI, LSI |
 | 3 | **`dynamodb-data-types.md`** | types ทั้งหมด (S/N/B/BOOL/L/M/SS...) |
 | 4 | **`dynamodb-query-reference.md`** | API + 🔴 สิ่งที่ทำให้แพง/ช้า |
+| 5 | **`dynamodb-best-practices.md`** | แนวปฏิบัติที่ดี (key design, single-table, cost, security) |
+| 6 | **`migration-from-sql.md`** | ย้ายจาก SQL/MongoDB (วิธีคิด + ตัวอย่างแปลงครบชุด) |
 
 ---
 
@@ -154,6 +156,8 @@ why-dynamodb.md               ทำไมต้องใช้ (decision + ต�
 dynamodb-key-design.md        PK/SK/GSI/LSI + design
 dynamodb-data-types.md        types ทั้งหมด
 dynamodb-query-reference.md   API + prod safety
+dynamodb-best-practices.md    แนวปฏิบัติที่ดี (11 หมวด + checklist)
+migration-from-sql.md         ย้ายจาก SQL/MongoDB (9 ส่วน + ตัวอย่าง)
 README.md                     ไฟล์นี้
 ```
 
